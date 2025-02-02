@@ -23,8 +23,8 @@ user_prompt = st.chat_input(placeholder="Message Levina")
 # User input: If the user has entered anything, it is stored in the variable user_prompt
 if user_prompt:
     if validate_input_and_output(user_prompt):
-        st.error("This is an inappropriate conversation topic. Please enter a valid input and then we will resume our "
-                 "conversation.")
+        st.error("This is an inappropriate conversation topic to discuss with me. Please enter a "
+                 "less sensitive input and then we will resume our conversation.")
     else:
         with st.chat_message("user"):
             st.markdown(user_prompt)
